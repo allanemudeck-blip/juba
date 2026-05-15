@@ -1,0 +1,8 @@
+{
+  "name": "JUBA Properties | Luxury Real Estate Uganda",
+  "description": "Premium real estate and property management company in Kampala, Uganda, specializing in luxury apartments, villas, and commercial investments.",
+  "requestFramePermissions": [
+    "geolocation"
+  ],
+  "majorCapabilities": []
+}
