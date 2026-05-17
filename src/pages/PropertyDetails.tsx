@@ -26,17 +26,33 @@ export default function PropertyDetails() {
         
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4 h-[400px] md:h-[600px]">
           <div className="md:col-span-2 rounded-lg overflow-hidden shadow-2xl">
-            <img src={property.image} alt={property.title} className="w-full h-full object-cover" />
+            <img 
+              src={property.image} 
+              alt={property.title} 
+              className="w-full h-full object-cover" 
+              loading="eager"
+              fetchPriority="high"
+            />
           </div>
           <div className="grid grid-rows-2 gap-4 hidden md:grid">
             {property.gallery.map((img, i) => (
               <div key={i} className="rounded-lg overflow-hidden border border-white/20 shadow-xl">
-                <img src={img} alt={`${property.title} gallery ${i}`} className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
+                <img 
+                  src={img} 
+                  alt={`${property.title} gallery ${i}`} 
+                  className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" 
+                  loading="lazy"
+                />
               </div>
             ))}
             {!property.gallery[1] && (
                <div className="rounded-lg overflow-hidden border border-white/20 shadow-xl relative">
-                  <img src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d" alt="placeholder" className="w-full h-full object-cover blur-sm" />
+                  <img 
+                    src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&q=75&w=800&fm=webp" 
+                    alt="placeholder" 
+                    className="w-full h-full object-cover blur-sm" 
+                    loading="lazy"
+                  />
                   <div className="absolute inset-0 bg-brand-900/40 flex items-center justify-center text-white font-serif text-xl italic">Premium View</div>
                </div>
             )}
@@ -142,7 +158,12 @@ export default function PropertyDetails() {
           </div>
 
           <div className="bg-white p-8 rounded-sm shadow-sm border border-gray-100 flex items-center gap-6">
-            <img src={property.agent.image} alt={property.agent.name} className="w-20 h-20 rounded-full object-cover border-4 border-gold-500/20" />
+            <img 
+              src={property.agent.image} 
+              alt={property.agent.name} 
+              className="w-20 h-20 rounded-full object-cover border-4 border-gold-500/20" 
+              loading="lazy"
+            />
             <div>
               <p className="text-gray-400 text-xs font-bold uppercase tracking-widest mb-1">Listing Agent</p>
               <h4 className="text-xl font-serif font-bold text-brand-900">{property.agent.name}</h4>

@@ -7,7 +7,12 @@ export default function About() {
       {/* Hero */}
       <section className="relative py-32 bg-brand-900 overflow-hidden">
         <div className="absolute inset-0 z-0 opacity-20">
-            <img src="https://images.unsplash.com/photo-1497366754035-f200968a6e72" alt="Office Background" className="w-full h-full object-cover" />
+            <img 
+              src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&q=75&w=1920&fm=webp" 
+              alt="Office Background" 
+              className="w-full h-full object-cover" 
+              loading="lazy"
+            />
         </div>
         <div className="max-w-7xl mx-auto px-4 relative z-10 text-center text-white">
            <motion.span 
@@ -57,12 +62,32 @@ export default function About() {
          </div>
          <div className="grid grid-cols-2 gap-4 relative">
             <div className="space-y-4 mt-12">
-               <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c" alt="Project 1" className="rounded-sm shadow-xl" />
-               <img src="https://images.unsplash.com/photo-1628744276229-c83402778643" alt="Project 2" className="rounded-sm shadow-xl" />
+               <img 
+                 src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&q=75&w=600&fm=webp" 
+                 alt="Project 1" 
+                 className="rounded-sm shadow-xl" 
+                 loading="lazy"
+               />
+               <img 
+                 src="https://images.unsplash.com/photo-1628744276229-c83402778643?auto=format&fit=crop&q=75&w=600&fm=webp" 
+                 alt="Project 2" 
+                 className="rounded-sm shadow-xl" 
+                 loading="lazy"
+               />
             </div>
             <div className="space-y-4">
-               <img src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d" alt="Project 3" className="rounded-sm shadow-xl" />
-               <img src="https://images.unsplash.com/photo-1545324418-cc1a3fa10c00" alt="Project 4" className="rounded-sm shadow-xl" />
+               <img 
+                 src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&q=75&w=600&fm=webp" 
+                 alt="Project 3" 
+                 className="rounded-sm shadow-xl" 
+                 loading="lazy"
+               />
+               <img 
+                 src="https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&q=75&w=600&fm=webp" 
+                 alt="Project 4" 
+                 className="rounded-sm shadow-xl" 
+                 loading="lazy"
+               />
             </div>
             <div className="absolute -z-10 bg-gold-500/5 inset-0 rounded-full blur-3xl scale-125"></div>
          </div>

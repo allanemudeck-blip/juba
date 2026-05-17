@@ -42,6 +42,8 @@ export default function Navbar() {
                 "h-12 w-auto transition-all duration-300",
                 scrolled ? "brightness-100" : "brightness-0 invert"
               )}
+              loading="eager"
+              fetchPriority="high"
             />
           </Link>
 

@@ -13,6 +13,7 @@ export default function Footer() {
                 src="https://i.postimg.cc/Y24gtKBs/130392.jpg" 
                 alt="JUBA Properties Logo" 
                 className="h-16 w-auto brightness-0 invert"
+                loading="lazy"
               />
             </Link>
             <p className="text-gray-400 text-sm leading-relaxed">

@@ -89,7 +89,12 @@ export default function Services() {
               </div>
            </div>
            <div className="relative">
-              <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&q=80" alt="Corporate Architecture" className="rounded-sm shadow-2xl relative z-10" />
+              <img 
+                src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&q=75&w=1200&fm=webp" 
+                alt="Corporate Architecture" 
+                className="rounded-sm shadow-2xl relative z-10" 
+                loading="lazy"
+              />
               <div className="absolute -top-10 -left-10 w-40 h-40 border-8 border-gold-500/20 z-0"></div>
               <div className="absolute -bottom-10 -right-10 w-60 h-60 bg-gold-500/5 rounded-full z-0"></div>
            </div>

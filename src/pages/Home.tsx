@@ -12,9 +12,11 @@ export default function Home() {
         {/* Background Image with Overlay */}
         <div className="absolute inset-0 z-0">
           <img
-            src="https://images.unsplash.com/photo-1549517045-bc93de075e53?auto=format&fit=crop&q=80"
+            src="https://images.unsplash.com/photo-1549517045-bc93de075e53?auto=format&fit=crop&q=75&w=1920&fm=webp"
             alt="Kampala Luxury Real Estate"
             className="w-full h-full object-cover"
+            loading="eager"
+            fetchPriority="high"
           />
           <div className="absolute inset-0 bg-brand-900/60 backdrop-blur-[2px]"></div>
         </div>
@@ -122,9 +124,10 @@ export default function Home() {
             className="relative"
           >
             <img
-              src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&q=80"
+              src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&q=75&w=800&fm=webp"
               alt="Professional Real Estate Team"
               className="rounded-lg shadow-2xl relative z-10"
+              loading="lazy"
             />
             <div className="absolute -bottom-8 -right-8 bg-gold-500 p-8 rounded-lg shadow-xl z-20 hidden md:block">
               <p className="text-brand-900 font-serif text-2xl font-bold italic">"Trusted Excellence in <br /> Ugandan Real Estate"</p>
@@ -182,9 +185,10 @@ export default function Home() {
       <section className="py-24 relative">
         <div className="absolute inset-0 z-0">
           <img
-            src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&q=80"
+            src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&q=75&w=1920&fm=webp"
             alt="CTA Background"
             className="w-full h-full object-cover"
+            loading="lazy"
           />
           <div className="absolute inset-0 bg-brand-900/80"></div>
         </div>
@@ -236,6 +240,7 @@ export function PropertyCard({ property, delay = 0 }: { property: any, delay?: n
           src={property.image}
           alt={property.title}
           className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+          loading="lazy"
         />
         <div className="absolute top-4 left-4 bg-gold-500 text-brand-900 px-3 py-1 text-xs font-bold uppercase tracking-wider rounded-sm shadow-md">
           {property.status}

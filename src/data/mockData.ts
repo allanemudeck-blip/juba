@@ -12,17 +12,17 @@ export const PROPERTIES: Property[] = [
     sqft: 2400,
     status: 'For Sale',
     type: 'Apartment',
-    image: 'https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&q=80',
+    image: 'https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&q=75&w=1200&fm=webp',
     gallery: [
-      'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&q=80',
-      'https://images.unsplash.com/photo-1600573472591-ee6b68d14c68?auto=format&fit=crop&q=80'
+      'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&q=75&w=1200&fm=webp',
+      'https://images.unsplash.com/photo-1600573472591-ee6b68d14c68?auto=format&fit=crop&q=75&w=1200&fm=webp'
     ],
     description: 'Breathtaking views of the Kampala skyline from this ultra-modern penthouse in the heart of Nakasero.',
     features: ['Swimming Pool', '24/7 Security', 'Gym', 'Private Balcony', 'High-speed Internet'],
     agent: {
       name: 'John Doe',
       phone: '+256 772 000000',
-      image: 'https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&q=80'
+      image: 'https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&q=75&w=150&fm=webp'
     }
   },
   {
@@ -36,16 +36,16 @@ export const PROPERTIES: Property[] = [
     sqft: 4200,
     status: 'For Sale',
     type: 'Villa',
-    image: 'https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&q=80',
+    image: 'https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&q=75&w=1200&fm=webp',
     gallery: [
-      'https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&q=80'
+      'https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&q=75&w=1200&fm=webp'
     ],
     description: 'A luxurious 5-bedroom villa with a private garden and proximity to the lake shore in Munyonyo.',
     features: ['Garden', 'Lake View', 'Garage', 'Guest Wing'],
     agent: {
       name: 'Jane Smith',
       phone: '+256 772 111111',
-      image: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80'
+      image: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=75&w=150&fm=webp'
     }
   },
   {
@@ -59,16 +59,16 @@ export const PROPERTIES: Property[] = [
     sqft: 1500,
     status: 'For Rent',
     type: 'Commercial',
-    image: 'https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&q=80',
+    image: 'https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&q=75&w=1200&fm=webp',
     gallery: [
-      'https://images.unsplash.com/photo-1497366811353-6870744d04b2?auto=format&fit=crop&q=80'
+      'https://images.unsplash.com/photo-1497366811353-6870744d04b2?auto=format&fit=crop&q=75&w=1200&fm=webp'
     ],
     description: 'Prime commercial building in Kololo, suitable for corporate headquarters or upscale offices.',
     features: ['Parking', 'Elevator', 'Meeting Rooms', 'Security'],
     agent: {
       name: 'Alex Johnson',
       phone: '+256 772 222222',
-      image: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&q=80'
+      image: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&q=75&w=150&fm=webp'
     }
   },
   {
@@ -82,7 +82,7 @@ export const PROPERTIES: Property[] = [
     sqft: 1200,
     status: 'For Rent',
     type: 'Apartment',
-    image: 'https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&q=80',
+    image: 'https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&q=75&w=1200&fm=webp',
     gallery: [],
     description: 'Modern 2-bedroom apartment with a stunning view of Lake Victoria.',
     features: ['Balcony', 'Modern Kitchen', 'Parking'],
