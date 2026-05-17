@@ -222,7 +222,13 @@ function SearchField({ placeholder, icon: Icon }: { placeholder: string; icon: a
   );
 }
 
-export function PropertyCard({ property, delay = 0 }: { property: any, delay?: number }) {
+interface PropertyCardProps {
+  property: any;
+  delay?: number;
+  key?: string;
+}
+
+export function PropertyCard({ property, delay = 0 }: PropertyCardProps) {
   const whatsappNumber = '+256772596660';
   const whatsappMessage = `Hello Juha Properties, I am interested in the property: ${property.title}. Thank you for your professional services. Please provide more details about this property.`;
   const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(whatsappMessage)}`;
@@ -313,7 +319,13 @@ export function PropertyCard({ property, delay = 0 }: { property: any, delay?: n
   );
 }
 
-function ServiceCard({ service, delay }: { service: any; delay: number }) {
+interface ServiceCardProps {
+  service: any;
+  delay: number;
+  key?: string;
+}
+
+function ServiceCard({ service, delay }: ServiceCardProps) {
   return (
     <motion.div
       initial={{ opacity: 0, y: 20 }}
